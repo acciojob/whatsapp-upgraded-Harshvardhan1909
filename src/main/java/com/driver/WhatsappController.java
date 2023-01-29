@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class WhatsappController {
 
     //Autowire will not work in this case, no need to change this and add autowire
-    WhatsappService whatsappService = new WhatsappService();
+    com.driver.WhatsappService whatsappService = new com.driver.WhatsappService();
 
     @PostMapping("/add-user")
     public String createUser(@RequestParam String name,@RequestParam String mobile) throws Exception {
@@ -120,4 +120,6 @@ public class WhatsappController {
         //   return whatsappService.findMessage(start, end, K);
         return null;
     }
+
+
 }
