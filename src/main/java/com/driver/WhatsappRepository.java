@@ -190,15 +190,5 @@ public class WhatsappRepository {
         userMessageList.remove(user);
 
         return groupHashMap.get(group1).size()+messagesInGroup.get(group1).size()+messageList.size();
-
-
-
-
     }
-
-
-
-
-
-
 }

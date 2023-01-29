@@ -36,6 +36,4 @@ public class WhatsappService {
     public int removeUser(User user)throws Exception{
         return whatsappRepository.removeUser(user);
     }
-
-
 }
